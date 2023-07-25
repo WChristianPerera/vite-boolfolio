@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-// importare i componenti che definiscono le varie pagine
 import AppHome from './pages/AppHome.vue';
 import PostsIndex from './pages/PostsIndex.vue';
 import AppContact from './pages/AppContact.vue';
@@ -35,7 +34,8 @@ const router = createRouter({
 			path: '/posts/:slug',
 			name: 'posts.show',
 			component: PostsShow,
-		},		{
+		},
+		{
 			path: '/:pathMatch(.*)*',
 			name: 'page404',
 			component: App404,
